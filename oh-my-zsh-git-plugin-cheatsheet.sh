@@ -8,8 +8,9 @@
 # Config
 PLUGIN_PATH="$HOME/.oh-my-zsh/plugins/git/git.plugin.zsh"
 README_PATH="$HOME/.oh-my-zsh/plugins/git/README.md"
-CACHE_FILE="./git_aliases_cache.txt"
-CACHE_DATE_FILE="./git_aliases_cache_date.txt"
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+CACHE_FILE="$SCRIPT_DIR/git_aliases_cache.txt"
+CACHE_DATE_FILE="$SCRIPT_DIR/git_aliases_cache_date.txt"
 CACHE_EXPIRY_DAYS=30
 SEARCH_TERM="$1"
 
